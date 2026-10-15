@@ -1,8 +1,4 @@
+
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/submit.js": {
-      "runtime": "nodejs24.x"
-    }
-  }
+  "$schema": "https://openapi.vercel.sh/vercel.json"
 }
