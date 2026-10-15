@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Work Ways USA | Employment Application</title>
+
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-content">
+
+        <div class="logo">
+            WORK WAYS
+            <span>USA</span>
+        </div>
+
+        <p>
+            International Employment Application
+        </p>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <div class="application-card">
+
+        <div class="card-heading">
+
+            <h1>
+                Employment Application
+            </h1>
+
+            <p>
+                Complete all required information accurately.
+            </p>
+
+        </div>
+
+
+        <!-- REFERENCE -->
+
+        <div class="reference-box">
+
+            <div>
+                <small>
+                    APPLICATION REFERENCE
+                </small>
+
+                <strong id="referenceNumber">
+                    Generating...
+                </strong>
+            </div>
+
+            <span>
+                NEW APPLICATION
+            </span>
+
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div
+            id="statusMessage"
+            class="status-message"
+        ></div>
+
+
+        <form
+            id="applicationForm"
+            novalidate
+        >
+
+
+            <!-- =========================
+                 PERSONAL INFORMATION
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <div>
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Enter your information exactly as it appears
+                            on your official documents.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field full">
+
+                        <label>
+                            Full Name
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Full name as shown on passport"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Date of Birth
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                            name="dateOfBirth"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Sex
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="sex"
+                            name="sex"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Nationality
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="nationality"
+                            name="nationality"
+                            required
+                        >
+
+                            <option value="">
+                                Select nationality
+                            </option>
+
+                            <option>Kenya</option>
+                            <option>Uganda</option>
+                            <option>Tanzania</option>
+                            <option>Rwanda</option>
+                            <option>Burundi</option>
+                            <option>Ethiopia</option>
+                            <option>Nigeria</option>
+                            <option>Ghana</option>
+                            <option>South Africa</option>
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Bangladesh</option>
+                            <option>Philippines</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Current Country
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="currentCountry"
+                            name="currentCountry"
+                            placeholder="Country where you currently live"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Education Level
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="education"
+                            name="education"
+                            required
+                        >
+
+                            <option value="">
+                                Select education
+                            </option>
+
+                            <option>
+                                Primary School
+                            </option>
+
+                            <option>
+                                Secondary School
+                            </option>
+
+                            <option>
+                                Certificate
+                            </option>
+
+                            <option>
+                                Diploma
+                            </option>
+
+                            <option>
+                                Bachelor's Degree
+                            </option>
+
+                            <option>
+                                Master's Degree
+                            </option>
+
+                            <option>
+                                Doctorate
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Current Occupation
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="occupation"
+                            name="occupation"
+                            placeholder="e.g. Driver"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 EMPLOYMENT
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Employment Preferences
+                        </h2>
+
+                        <p>
+                            Tell us about the opportunity you are
+                            interested in.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label>
+                            Job Interested In
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="job"
+                            name="job"
+                            placeholder="e.g. Warehouse Worker"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Availability
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="availability"
+                            name="availability"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>
+                                Immediately
+                            </option>
+
+                            <option>
+                                Within 1 Month
+                            </option>
+
+                            <option>
+                                Within 2 Months
+                            </option>
+
+                            <option>
+                                Within 3 Months
+                            </option>
+
+                            <option>
+                                More than 3 Months
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 BACKGROUND
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Background & Visa Information
+                        </h2>
+
+                        <p>
+                            Provide accurate background information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label>
+                            Criminal Record
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="criminalRecord"
+                            name="criminalRecord"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>
+                                No
+                            </option>
+
+                            <option>
+                                Yes
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Previous U.S. Visa
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="previousVisa"
+                            name="previousVisa"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>
+                                No
+                            </option>
+
+                            <option>
+                                Yes
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Visa Type
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="visaType"
+                            name="visaType"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>
+                                Not Applicable
+                            </option>
+
+                            <option>
+                                B1/B2
+                            </option>
+
+                            <option>
+                                F1
+                            </option>
+
+                            <option>
+                                H-1B
+                            </option>
+
+                            <option>
+                                H-2A
+                            </option>
+
+                            <option>
+                                H-2B
+                            </option>
+
+                            <option>
+                                J-1
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PASSPORT
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Passport Information
+                        </h2>
+
+                        <p>
+                            Enter your passport information accurately.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label>
+                            Passport Number
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="passportNumber"
+                            name="passportNumber"
+                            placeholder="Passport number"
+                            autocomplete="off"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Passport Expiry
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="passportExpiry"
+                            name="passportExpiry"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 CONTACT
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        05
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Contact Information
+                        </h2>
+
+                        <p>
+                            Provide contact information where you can
+                            be reached.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label>
+                            WhatsApp Number
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="whatsapp"
+                            name="whatsapp"
+                            placeholder="+254 700 000000"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 DOCUMENTS
+            ========================== -->
+
+            <section>
+
+                <div class="section-heading">
+
+                    <div class="number">
+                        06
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Documents
+                        </h2>
+
+                        <p>
+                            Document readiness confirmation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="documents-box">
+
+                    <h3>
+                        Documents to prepare
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            National ID — front and back
+                        </li>
+
+                        <li>
+                            Passport biodata page
+                        </li>
+
+                        <li>
+                            CV — if available
+                        </li>
+
+                        <li>
+                            Other supporting documents
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <label class="check-row">
+
+                    <input
+                        type="checkbox"
+                        id="documentsReady"
+                        required
+                    >
+
+                    <span>
+                        I confirm that I have clear copies of my
+                        identification and passport documents ready.
+                    </span>
+
+                </label>
+
+
+                <label class="check-row">
+
+                    <input
+                        type="checkbox"
+                        id="informationCorrect"
+                        required
+                    >
+
+                    <span>
+                        I confirm that the information provided is
+                        accurate and complete.
+                    </span>
+
+                </label>
+
+            </section>
+
+
+            <!-- =========================
+                 SUBMIT
+            ========================== -->
+
+            <div class="submit-section">
+
+                <button
+                    type="submit"
+                    id="submitButton"
+                >
+
+                    <span id="buttonText">
+                        Submit Application
+                    </span>
+
+                    <span
+                        id="buttonLoader"
+                        class="loader"
+                    ></span>
+
+                </button>
+
+
+                <p>
+                    Your application will be securely submitted for
+                    processing.
+                </p>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Work Ways USA. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="/script.js"></script>
+
+</body>
+</html>
